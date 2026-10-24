@@ -1,0 +1,1 @@
+ALTER TABLE `assistantMessages` ADD `metadataJson` text;

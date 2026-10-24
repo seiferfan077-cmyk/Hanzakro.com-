@@ -1,0 +1,2 @@
+ALTER TABLE `competitionMatchResults` ADD `completionReason` varchar(24) DEFAULT 'completed' NOT NULL;--> statement-breakpoint
+ALTER TABLE `competitionMatchResults` ADD `forfeitedBy` enum('saif','haneen');

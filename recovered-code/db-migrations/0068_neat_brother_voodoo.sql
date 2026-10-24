@@ -1,0 +1,2 @@
+ALTER TABLE `competitionEngineSources` ADD `isPrimary` boolean DEFAULT false NOT NULL;--> statement-breakpoint
+CREATE INDEX `competition_source_primary_index` ON `competitionEngineSources` (`engineId`,`isPrimary`);

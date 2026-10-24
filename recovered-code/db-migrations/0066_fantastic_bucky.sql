@@ -1,0 +1,1 @@
+ALTER TABLE `competitionEngineSources` MODIFY COLUMN `sourceType` enum('lesson_note','study_file','text','url','image') NOT NULL;

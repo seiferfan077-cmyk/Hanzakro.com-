@@ -1,0 +1,1 @@
+ALTER TABLE `competitionQuestions` MODIFY COLUMN `questionType` enum('multiple_choice','true_false','short_answer','fill_blank','definition','explain','compare','ordering','matching') NOT NULL;
