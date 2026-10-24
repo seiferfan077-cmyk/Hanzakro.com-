@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
 import AssistantPage from './pages/AssistantPage';
 import CompetitionsPage from './pages/CompetitionsPage';
+import DashboardPage from './pages/DashboardPage';
 import HomePage from './pages/HomePage';
 import LuayChatPage from './pages/LuayChatPage';
 import NotFoundPage from './pages/NotFoundPage';
@@ -15,6 +16,7 @@ function App() {
         <Route path="/chat" element={<LuayChatPage />} />
         <Route element={<AppLayout />}>
           <Route index element={<HomePage />} />
+          <Route path="dashboard" element={<DashboardPage />} />
           <Route path="study" element={<StudyPage />} />
           <Route path="competitions" element={<CompetitionsPage />} />
           <Route path="vocabulary" element={<VocabularyPage />} />

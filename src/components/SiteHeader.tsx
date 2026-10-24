@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 
 const navigation = [
+  { to: '/dashboard', label: 'لوحة التحكم' },
   { to: '/study', label: 'مذاكرتي' },
   { to: '/competitions', label: 'المنافسات' },
   { to: '/vocabulary', label: 'المفردات' },
@@ -27,7 +28,7 @@ function SiteHeader() {
         ))}
       </nav>
 
-      <Link className="topbar-link" to="/">الصفحة الرئيسية <span aria-hidden="true">↗</span></Link>
+      <Link className="topbar-link" to="/">الصفحة العامة <span aria-hidden="true">↗</span></Link>
     </header>
   );
 }
