@@ -146,3 +146,29 @@ h2 { margin-bottom: 0; color: var(--ink); font-size: clamp(25px, 3vw, 35px); fon
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+
+/* Shared page and navigation structure */
+.nav-link { color: var(--muted); transition: color 160ms ease; }
+.nav-link:hover, .nav-link-active { color: var(--green); }
+.nav-link-active { font-weight: 700; }
+.area-row-link { color: inherit; transition: background 160ms ease, padding 160ms ease; }
+.area-row-link:hover { padding-inline: 10px; background: #eff2e9; }
+
+.section-page { min-height: min(680px, calc(100vh - 190px)); padding-block: clamp(68px, 11vw, 136px); }
+.section-page .eyebrow { margin-bottom: 18px; }
+.section-page-title { max-width: 780px; margin-bottom: 20px; font-size: clamp(38px, 6vw, 66px); }
+.section-page-description { max-width: 680px; margin-bottom: 32px; color: var(--muted); font-size: 15px; line-height: 2; }
+.section-state { display: flex; align-items: flex-start; gap: 15px; max-width: 650px; margin-bottom: 28px; padding: 20px; border: 1px solid var(--line); border-radius: 9px; background: var(--white); }
+.section-state-icon { display: grid; width: 32px; height: 32px; flex: 0 0 auto; place-items: center; border-radius: 50%; color: #986036; background: #f5eadc; }
+.section-state-title { margin-bottom: 5px; color: var(--ink); font-size: 13px; font-weight: 700; }
+.section-state-copy { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.9; }
+.not-found-page { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+
+@media (max-width: 560px) {
+  .topbar { min-height: auto; flex-wrap: wrap; gap: 12px; padding-block: 13px; }
+  .topnav { display: flex; order: 3; width: 100%; gap: 20px; overflow-x: auto; padding-top: 10px; border-top: 1px solid var(--line); font-size: 11px; white-space: nowrap; }
+  .topbar-link { margin-inline-start: auto; }
+  .section-page { min-height: calc(100vh - 208px); padding-block: 70px 85px; }
+  .section-page-description { font-size: 13px; }
+}
